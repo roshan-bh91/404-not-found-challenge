@@ -85,6 +85,7 @@ body {
 }
 .footer_wrapper > p {
   color: var(--footer-text-color);
+  font-family: "Montserrat", sans-serif;
 }
 .highlighted-text {
   font-weight: 700;
