@@ -1,0 +1,118 @@
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Montserrat', sans-serif;
+
+font-family: 'Space Mono', monospace; */
+
+:root {
+  --title-text-color: #333333;
+  --normal-text-color: #4f4f4f;
+  --bg-color: #ffffff;
+  --fw-bold: 700;
+  --fw-normal: 400;
+  --footer-text-color: #bdbdbd;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-color);
+}
+
+.navigation_wrapper {
+  margin: 2rem;
+  padding: 0 2rem;
+}
+.navigation_wrapper > p {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  letter-spacing: -0.08em;
+  font-size: 1.5rem;
+  line-height: 25px;
+}
+
+.content_wrapper {
+  display: flex;
+  padding: 2rem 4rem;
+  margin: 3rem 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.image_wrapper {
+  flex-basis: 50%;
+  padding: 0 4rem;
+}
+.image_wrapper > img {
+  width: 400px;
+  height: 400px;
+}
+.text_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin: 1.5rem;
+  flex-basis: 50%;
+}
+.title_wrapper > h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Inconsolata", monospace;
+  line-height: 6rem;
+}
+.current_content_wrapper > p {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.button_wrapper button {
+  background-color: var(--title-text-color);
+  color: var(--bg-color);
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Mono", monospace;
+}
+.footer_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  bottom: 2rem;
+}
+.footer_wrapper > p {
+  color: var(--footer-text-color);
+}
+.highlighted-text {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation_wrapper {
+    padding: 0 1rem;
+  }
+  .content_wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin: 1rem 1rem;
+    gap: 1rem;
+  }
+  .image_wrapper > img {
+    width: 200px;
+    height: 200px;
+  }
+  .text_wrapper {
+    margin: 1rem;
+  }
+  .title_wrapper > h3 {
+    font-size: 3rem;
+  }
+  .current_content_wrapper > p {
+    font-size: 1.2rem;
+  }
+}
