@@ -111,6 +111,7 @@ body {
   }
   .title_wrapper > h3 {
     font-size: 3rem;
+    line-height: 4.5rem;
   }
   .current_content_wrapper > p {
     font-size: 1.2rem;
